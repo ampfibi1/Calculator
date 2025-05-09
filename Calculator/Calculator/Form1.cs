@@ -13,6 +13,7 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+
         //Field
         Double result = 0;
         string operation = string.Empty;

@@ -6,30 +6,45 @@ using System.Windows.Forms;
 
 namespace ElipseByTamjid
 {
-    public class ElipseControl :Component 
+    public class ElipseControl : Component
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
-        private static extern IntPtr CreateRoundRectRgn(int nL, int nT, int nR, int nB, int nWidthEllipse, int nHeightEllipse);
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeftRect, int nTopRect, int nRightRect, int nBottomRect,
+            int nWidthEllipse, int nHeightEllipse);
 
         private Control control;
         private int cornerRadius = 25;
 
-        public Control TargetConstrol
+        public Control TargetControl
         {
-            get { return control; }
-            set { control = value;
-                control.SizeChanged += (sender, eventArgs) => control.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, control.Width, control.Height, cornerRadius, cornerRadius));
+            get => control;
+            set
+            {
+                control = value;
+                ApplyElipse(); // Apply initially
+
+                // Reapply when size changes
+                control.SizeChanged += (sender, e) => ApplyElipse();
             }
         }
 
-        public int CornerRedius
+        public int CornerRadius
         {
-            get { return cornerRadius; }
-            set { cornerRadius = value; 
-                if(control != null)
-                    control.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, control.Width, control.Height, cornerRadius, cornerRadius));
+            get => cornerRadius;
+            set
+            {
+                cornerRadius = value;
+                ApplyElipse();
+            }
+        }
 
+        private void ApplyElipse()
+        {
+            if (control != null && control.Width > 0 && control.Height > 0)
+            {
+                control.Region = Region.FromHrgn(CreateRoundRectRgn(
+                    0, 0, control.Width, control.Height, cornerRadius, cornerRadius));
             }
         }
     }

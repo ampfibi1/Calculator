@@ -77,6 +77,7 @@ namespace Calculator
             this.BtnMultipication = new ModernButton.MyModernButton();
             this.BtnPercant = new ModernButton.MyModernButton();
             this.btnBackSpace = new ModernButton.MyModernButton();
+            this.elipseControl1 = new ElipseByTamjid.ElipseControl();
             this.PnlTitle.SuspendLayout();
             this.panel1.SuspendLayout();
             this.PnlHistory.SuspendLayout();
@@ -888,6 +889,11 @@ namespace Calculator
             this.btnBackSpace.UseVisualStyleBackColor = false;
             this.btnBackSpace.Click += new System.EventHandler(this.btnBackSpace_Click);
             // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 25;
+            this.elipseControl1.TargetControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -993,6 +999,7 @@ namespace Calculator
         private ModernButton.MyModernButton BtnDiv;
         private ModernButton.MyModernButton BtnMultipication;
         private ModernButton.MyModernButton BtnPercant;
+        private ElipseByTamjid.ElipseControl elipseControl1;
     }
 }
 

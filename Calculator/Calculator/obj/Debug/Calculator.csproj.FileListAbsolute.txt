@@ -8,3 +8,13 @@ C:\Users\user\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.Cor
 C:\Users\user\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\user\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
 C:\Users\user\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+P:\Git HUB _Repositories\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
